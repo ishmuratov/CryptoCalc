@@ -1,0 +1,14 @@
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\bin\Release\netstandard2.0\DroidCurrency.deps.json
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\bin\Release\netstandard2.0\DroidCurrency.dll
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\bin\Release\netstandard2.0\ref\DroidCurrency.dll
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\bin\Release\netstandard2.0\DroidCurrency.pdb
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\DroidCurrency.AssemblyInfoInputs.cache
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\DroidCurrency.AssemblyInfo.cs
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\DroidCurrency.dll
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\ref\DroidCurrency.dll
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\DroidCurrency.pdb
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\DroidCurrency.csprojAssemblyReference.cache
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\DroidCurrency.csproj.CoreCompileInputs.cache
+C:\Users\s.ishmuratov\source\repos\DroidCurrency\DroidCurrency\DroidCurrency\obj\Release\netstandard2.0\XamlC.stamp

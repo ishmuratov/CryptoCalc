@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DroidCurrency.MainPage">
+
+    <StackLayout>
+        <Image Source="main_small.jpg"/>
+        <Frame Grid.Column="2" CornerRadius="1" OutlineColor="Black" BackgroundColor="AliceBlue">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="25" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Picker x:Name="pickerCurrency1" Grid.Column="0" SelectedIndexChanged="OnPicker1Changed"/>
+                    <Image x:Name="imageCurrency1" WidthRequest="25" Grid.Column="1"/>
+                    <Entry x:Name="numCurencyAmount1" Grid.Column="2" WidthRequest="100" Keyboard="Numeric"/>
+                </Grid>
+
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="25" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Picker x:Name="pickerCurrency2" Grid.Column="0" SelectedIndexChanged="OnPicker1Changed"/>
+                        <Image x:Name="imageCurrency2" WidthRequest="25" Grid.Column="1"/>
+                        <Entry x:Name="numCurrencyAmount2" Grid.Column="2" WidthRequest="100" Keyboard="Numeric"/>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1"
+                            x:Name="btConvert"
+                            Text="Конвертировать" Clicked="OnConvertClicked"
+                            BackgroundColor="AliceBlue"
+                            CornerRadius="5"
+                            BorderWidth="5"
+                            BorderColor="Silver"
+                            TextColor="Black"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Label Text="" HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label Text="BTC" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="imgBTC" Grid.Column="1" HorizontalOptions="Center"/>
+            <Label x:Name="lbNameBitcoin" Text="Bitcoin" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label x:Name="lbBitcoin" Text="$0,000.00" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label Text="ETH" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="imgETH" Grid.Column="1" HorizontalOptions="Center"/>
+            <Label x:Name="lbNameEthereum" Text="Ethereum" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label x:Name="lbEthereum" Text="$0,000.00" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label Text="XMR" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="imgXMR" Grid.Column="1" HorizontalOptions="Center"/>
+            <Label x:Name="lbNameMonero" Text="Monero" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label x:Name="lbMonero" Text="$0,000.00" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label Text="LTC" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="imgLTC" Grid.Column="1" HorizontalOptions="Center"/>
+            <Label x:Name="lbNameLiteCoin" Text="Lite Coin" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label x:Name="lbLiteCoin" Text="$0,000.00" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Label Text="XRP" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image x:Name="imgXRP" Grid.Column="1" HorizontalOptions="Center"/>
+            <Label x:Name="lbNameRipple" Text="Ripple" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label x:Name="lbRipple" Text="$0,000.00" Grid.Column="3" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+        <Label x:Name="lbStatus"
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="End"/>
+        <Button Grid.Column="1"
+                            x:Name="btUpdateInfo"
+                            Text="Обновить курсы" Clicked="OnUpdateClicked"
+                            BackgroundColor="White"
+                            CornerRadius="5"
+                            BorderWidth="5"
+                            BorderColor="Silver"
+                            TextColor="Black"
+                VerticalOptions="EndAndExpand"/>
+    </StackLayout>
+</ContentPage>
