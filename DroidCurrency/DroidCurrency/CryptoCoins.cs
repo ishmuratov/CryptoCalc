@@ -23,7 +23,7 @@ namespace DroidCurrency
                     {
                         //в переменной html наш сайт
                         string html = readers.ReadToEnd();
-                        Match match = Regex.Match(html, @"priceValue(.+?)<\/div>", RegexOptions.Singleline);
+                        Match match = Regex.Match(html, @"priceValue(.+?)<\/div>");
                         List<string> log = new List<string>();
                         while (match.Success)
                         {
